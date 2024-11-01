@@ -1,4 +1,4 @@
-package com.erikandreasdev.ecotransportsystem.domain.model;
+package com.erikandreasdev.ecotransportsystem.domain.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
