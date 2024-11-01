@@ -18,6 +18,16 @@ public class UserRepositoryAdapter implements UserRepository {
     }
 
     @Override
+    public void delete(UUID userId) {
+        repository.deleteById(userId);
+    }
+
+    @Override
+    public User save(User user) {
+        return repository.save(user);
+    }
+
+    @Override
     public Optional<User> findById(UUID userId) {
         return repository.findById(userId);
     }

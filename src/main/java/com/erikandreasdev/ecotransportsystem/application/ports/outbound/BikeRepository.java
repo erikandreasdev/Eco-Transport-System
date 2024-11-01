@@ -11,4 +11,6 @@ public interface BikeRepository {
 
     void save(Bike bike);
 
+    void deleteById(UUID bikeId);
+
 }

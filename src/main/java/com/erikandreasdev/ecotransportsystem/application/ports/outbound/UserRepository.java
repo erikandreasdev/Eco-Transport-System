@@ -9,4 +9,7 @@ public interface UserRepository {
 
     Optional<User> findById(UUID userId);
 
+    User save(User user);
+
+    void delete(UUID userId);
 }

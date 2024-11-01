@@ -27,4 +27,9 @@ public class BikeRepositoryAdapter implements BikeRepository {
         repository.save(bike);
     }
 
+    @Override
+    public void deleteById(UUID bikeId) {
+
+    }
+
 }
