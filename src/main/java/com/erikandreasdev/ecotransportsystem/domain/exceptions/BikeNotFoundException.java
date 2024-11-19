@@ -1,11 +1,9 @@
 package com.erikandreasdev.ecotransportsystem.domain.exceptions;
 
-import java.util.UUID;
-
 public class BikeNotFoundException extends RuntimeException {
 
-    public BikeNotFoundException(UUID bikeId) {
-        super("Bike not found with ID: " + bikeId);
+    public BikeNotFoundException(Long id) {
+        super("Bike with ID " + id + " not found");
     }
 
 }
